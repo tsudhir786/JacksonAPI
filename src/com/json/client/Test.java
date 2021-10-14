@@ -13,11 +13,11 @@ public class Test {
 		String jsonEmployee = JsonUtil.convertJavaObjToJson(emp);
 		System.out.println(jsonEmployee);
 		System.out.println("=====================================");
-		/*
-		 * Employee emp1 = JsonUtil.convertJsonToJavaObj(jsonEmployee, Employee.class);
-		 * System.out.println(emp1.getEmpNo() + " " + emp1.getName() + " " +
-		 * emp1.getSalary());
-		 */
+		
+		  Employee emp1 = JsonUtil.convertJsonToJavaObj(jsonEmployee, Employee.class);
+		  System.out.println(emp1.getEmpNo() + " " + emp1.getName() + " " +
+		  emp1.getSalary());
+		 
 	}
 
 }
